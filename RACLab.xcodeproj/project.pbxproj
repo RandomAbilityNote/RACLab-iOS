@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B06C83672D6C27FA00DCB5A2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B06C83662D6C27FA00DCB5A2 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B0E7A0A52D6B3EB700C8F575 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B06C83662D6C27FA00DCB5A2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		B0E7A0942D6B3EB600C8F575 /* RACLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E7A0A42D6B3EB700C8F575 /* RACLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E7A0AE2D6B3EB700C8F575 /* RACLabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACLabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +80,7 @@
 		B0E7A08B2D6B3EB600C8F575 = {
 			isa = PBXGroup;
 			children = (
+				B06C83662D6C27FA00DCB5A2 /* .gitignore */,
 				B0E7A0962D6B3EB600C8F575 /* RACLab */,
 				B0E7A0A72D6B3EB700C8F575 /* RACLabTests */,
 				B0E7A0B12D6B3EB700C8F575 /* RACLabUITests */,
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B06C83672D6C27FA00DCB5A2 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
