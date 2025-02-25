@@ -1,0 +1,66 @@
+disabled_rules: # 기본적으로 활성화된 규칙 중에서 제외할 항목을 지정
+
+
+#opt_in_rules: #기본적으로 꺼져 있는 규칙 중에서 활성화할 항목을 지정
+#  - empty_count # → isEmpty 대신 .count == 0을 사용하는 코드 검사
+
+
+# only_rules: # 모든 규칙을 명시적으로 지정하려면 disabled_rules 및 opt_in_rules를 삭제하고 사용
+  # - empty_parameters # 빈 매개변수 목록을 허용하지 않음 ,func someFunction { }  // () 없이 함수 선언
+  # - vertical_whitespace # 불필요한 공백(빈 줄) 사용을 제한
+
+# analyzer_rules: # swiftlint analyze 명령어 실행 시 적용할 규칙을 설정
+#  - explicit_self # → self를 명시적으로 사용할지 여부 검사
+
+# 포함 / 미포함 여부
+
+# included: 검사할 파일/폴더 경로를 지정 (커맨드라인에서 제공하는 경로보다 우선)
+  # - Sources → Sources 디렉터리 내의 파일을 검사
+excluded: # 검사에서 제외할 파일/폴더 지정
+  - RACLabTests
+  - RACLabUITests
+# - Carthage, Pods → 패키지 매니저 관련 폴더 제외
+# - Sources/ExcludedFolder, Sources/ExcludedFile.swift → 특정 폴더 및 파일 제외
+# - Sources/*/ExcludedFile.swift → 와일드카드(*)를 사용해 특정 패턴의 파일 제외
+
+# allow_zero_lintable_files: false # true로 설정하면 검사할 파일이 없어도 오류 발생 안 함 (false면 오류 발생)
+# strict: false # true로 설정하면 모든 경고를 오류로 간주
+# baseline:  Baseline.json 기존의 린트 위반 사항을 저장하여 무시할 수 있는 기준 파일 설정
+# write_baseline: Baseline.json 새로운 린트 위반 사항을 Baseline.json에 저장
+# check_for_updates: true로 설정하면 SwiftLint가 실행될 때마다 업데이트 확인
+
+# 규칙별 세부 사항
+
+# 타입 캐스팅
+force_cast: warning  # 강제 형변환 (`as!`) 사용 시 경고
+force_try:
+  severity: warning  # 강제 `try!` 사용 시 경고
+
+# 코드 길이 제한
+line_length: 110  # 한 줄 최대 길이 110자로 제한
+type_body_length:
+  - 300  # 경고 (타입 본문이 300줄 초과 시)
+  - 400  # 오류 (타입 본문이 400줄 초과 시)
+file_length:
+  warning: 500  # 파일이 500줄 초과 시 경고
+  error: 1200  # 파일이 1200줄 초과 시 오류
+
+# 이름 규칙
+type_name:
+  min_length: 4  # 타입명 최소 4자 (경고)
+  max_length:
+    warning: 40  # 타입명 40자 초과 시 경고
+    error: 50  # 타입명 50자 초과 시 오류
+  excluded: iPhone  # "iPhone"은 예외 처리하여 검사하지 않음
+  allowed_symbols: ["_"]  # `_` 사용 가능
+
+identifier_name:
+  min_length:
+    error: 4  # 변수/상수명 최소 4자 (오류)
+  excluded:
+    - id  # "id" 예외 처리
+    - URL  # "URL" 예외 처리
+
+# 출력 형식 설정
+reporter: "xcode" # json, csv, html, emoji, github-actions-logging 등 다양한 포맷 가능
+

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B06C83672D6C27FA00DCB5A2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B06C83662D6C27FA00DCB5A2 /* .gitignore */; };
+		B06C837A2D6CA59300DCB5A2 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B06C83792D6CA59300DCB5A2 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		B06C83662D6C27FA00DCB5A2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B06C83792D6CA59300DCB5A2 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		B0E7A0942D6B3EB600C8F575 /* RACLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E7A0A42D6B3EB700C8F575 /* RACLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E7A0AE2D6B3EB700C8F575 /* RACLabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACLabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 		B0E7A08B2D6B3EB600C8F575 = {
 			isa = PBXGroup;
 			children = (
+				B06C83792D6CA59300DCB5A2 /* .swiftlint.yml */,
 				B06C83662D6C27FA00DCB5A2 /* .gitignore */,
 				B0E7A0962D6B3EB600C8F575 /* RACLab */,
 				B0E7A0A72D6B3EB700C8F575 /* RACLabTests */,
@@ -106,6 +109,7 @@
 			buildConfigurationList = B0E7A0B82D6B3EB700C8F575 /* Build configuration list for PBXNativeTarget "RACLab" */;
 			buildPhases = (
 				B0E7A0902D6B3EB600C8F575 /* Sources */,
+				B06C837B2D6D864400DCB5A2 /* SwiftLint */,
 				B0E7A0912D6B3EB600C8F575 /* Frameworks */,
 				B0E7A0922D6B3EB600C8F575 /* Resources */,
 			);
@@ -218,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B06C837A2D6CA59300DCB5A2 /* .swiftlint.yml in Resources */,
 				B06C83672D6C27FA00DCB5A2 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +242,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B06C837B2D6D864400DCB5A2 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -x /opt/homebrew/bin/swiftlint ]; then # Apple Silicon 실행 가능하다면 true\n    /opt/homebrew/bin/swiftlint\nelif [ -x /usr/local/bin/swiftlint ]; then # Intel Mac 실행 가능하다면 true\n    /usr/local/bin/swiftlint\nelse\n    echo \"warning: SwiftLint not installed. Please install it via Homebrew (brew install swiftlint).\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B0E7A0902D6B3EB600C8F575 /* Sources */ = {
@@ -405,6 +431,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RACLab/Preview Content\"";
 				DEVELOPMENT_TEAM = 28NL63HBTJ;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -434,6 +461,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RACLab/Preview Content\"";
 				DEVELOPMENT_TEAM = 28NL63HBTJ;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
