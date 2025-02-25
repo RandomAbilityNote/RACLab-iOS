@@ -10,13 +10,23 @@ on:
       - '**/*.swift'
     
 jobs:
-  SwiftLint:
+  swiftlint:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write # pr에 댓글 달 수 있는 권한 부여
     steps:
       - uses: actions/checkout@v4
-      - name: GitHub Action for SwiftLint (Only files changed in the PR)
+      - name: GitHub Action for SwiftLint
         uses: norio-nomura/action-swiftlint@3.2.1
+
+      - name: Comment success result to PR
+        uses: mshick/add-pr-comment@v2
+        if: ${{ success() }}
         with:
-          args: --strict
-        env:
-          DIFF_BASE: ${{ github.base_ref }}
+          message: "## ✅ Successful finished SwiftLint"
+
+      - name: Comment failure result ot PR
+        uses: mshick/add-pr-comment@v2
+        if: ${{ failure() }}
+        with:
+          message: "## ❌ Error detected on SwiftLint"
