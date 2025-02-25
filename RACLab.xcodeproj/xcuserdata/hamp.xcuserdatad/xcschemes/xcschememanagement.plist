@@ -4,10 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>RACLab-Tests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>RACLab.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>B0E7A0932D6B3EB600C8F575</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B0E7A0A32D6B3EB700C8F575</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B0E7A0AD2D6B3EB700C8F575</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

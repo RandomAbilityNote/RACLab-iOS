@@ -19,13 +19,6 @@
 			remoteGlobalIDString = B0E7A0932D6B3EB600C8F575;
 			remoteInfo = RACLab;
 		};
-		B0E7A0AF2D6B3EB700C8F575 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B0E7A08C2D6B3EB600C8F575 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B0E7A0932D6B3EB600C8F575;
-			remoteInfo = RACLab;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +26,6 @@
 		B06C83792D6CA59300DCB5A2 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		B0E7A0942D6B3EB600C8F575 /* RACLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E7A0A42D6B3EB700C8F575 /* RACLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0E7A0AE2D6B3EB700C8F575 /* RACLabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACLabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,11 +37,6 @@
 		B0E7A0A72D6B3EB700C8F575 /* RACLabTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = RACLabTests;
-			sourceTree = "<group>";
-		};
-		B0E7A0B12D6B3EB700C8F575 /* RACLabUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = RACLabUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,13 +56,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0E7A0AB2D6B3EB700C8F575 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,7 +66,6 @@
 				B06C83662D6C27FA00DCB5A2 /* .gitignore */,
 				B0E7A0962D6B3EB600C8F575 /* RACLab */,
 				B0E7A0A72D6B3EB700C8F575 /* RACLabTests */,
-				B0E7A0B12D6B3EB700C8F575 /* RACLabUITests */,
 				B0E7A0952D6B3EB600C8F575 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,7 +75,6 @@
 			children = (
 				B0E7A0942D6B3EB600C8F575 /* RACLab.app */,
 				B0E7A0A42D6B3EB700C8F575 /* RACLabTests.xctest */,
-				B0E7A0AE2D6B3EB700C8F575 /* RACLabUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,29 +128,6 @@
 			productReference = B0E7A0A42D6B3EB700C8F575 /* RACLabTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B0E7A0AD2D6B3EB700C8F575 /* RACLabUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B0E7A0BE2D6B3EB700C8F575 /* Build configuration list for PBXNativeTarget "RACLabUITests" */;
-			buildPhases = (
-				B0E7A0AA2D6B3EB700C8F575 /* Sources */,
-				B0E7A0AB2D6B3EB700C8F575 /* Frameworks */,
-				B0E7A0AC2D6B3EB700C8F575 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B0E7A0B02D6B3EB700C8F575 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				B0E7A0B12D6B3EB700C8F575 /* RACLabUITests */,
-			);
-			name = RACLabUITests;
-			packageProductDependencies = (
-			);
-			productName = RACLabUITests;
-			productReference = B0E7A0AE2D6B3EB700C8F575 /* RACLabUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -187,10 +142,6 @@
 						CreatedOnToolsVersion = 16.0;
 					};
 					B0E7A0A32D6B3EB700C8F575 = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = B0E7A0932D6B3EB600C8F575;
-					};
-					B0E7A0AD2D6B3EB700C8F575 = {
 						CreatedOnToolsVersion = 16.0;
 						TestTargetID = B0E7A0932D6B3EB600C8F575;
 					};
@@ -212,7 +163,6 @@
 			targets = (
 				B0E7A0932D6B3EB600C8F575 /* RACLab */,
 				B0E7A0A32D6B3EB700C8F575 /* RACLabTests */,
-				B0E7A0AD2D6B3EB700C8F575 /* RACLabUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -228,13 +178,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B0E7A0A22D6B3EB700C8F575 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B0E7A0AC2D6B3EB700C8F575 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,13 +222,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0E7A0AA2D6B3EB700C8F575 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,11 +229,6 @@
 			isa = PBXTargetDependency;
 			target = B0E7A0932D6B3EB600C8F575 /* RACLab */;
 			targetProxy = B0E7A0A52D6B3EB700C8F575 /* PBXContainerItemProxy */;
-		};
-		B0E7A0B02D6B3EB700C8F575 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B0E7A0932D6B3EB600C8F575 /* RACLab */;
-			targetProxy = B0E7A0AF2D6B3EB700C8F575 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -488,6 +419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 28NL63HBTJ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
@@ -507,6 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 28NL63HBTJ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
@@ -516,40 +449,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RACLab.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RACLab";
-			};
-			name = Release;
-		};
-		B0E7A0BF2D6B3EB700C8F575 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 28NL63HBTJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yongbeomkwak.RACLabUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RACLab;
-			};
-			name = Debug;
-		};
-		B0E7A0C02D6B3EB700C8F575 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 28NL63HBTJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yongbeomkwak.RACLabUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RACLab;
 			};
 			name = Release;
 		};
@@ -579,15 +478,6 @@
 			buildConfigurations = (
 				B0E7A0BC2D6B3EB700C8F575 /* Debug */,
 				B0E7A0BD2D6B3EB700C8F575 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B0E7A0BE2D6B3EB700C8F575 /* Build configuration list for PBXNativeTarget "RACLabUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B0E7A0BF2D6B3EB700C8F575 /* Debug */,
-				B0E7A0C02D6B3EB700C8F575 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
