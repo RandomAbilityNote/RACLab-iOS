@@ -1,11 +1,5 @@
-//
-//  ContentView.swift
-//  RACLab
-//
-//  Created by yongbeomkwak on 2/23/25.
-//
-
 import SwiftUI
+import BaseFeature
 
 struct ContentView: View {
     var body: some View {
@@ -16,6 +10,10 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onAppear {
+          let bcccc = BaseFeatureTest()
+          bcccc.run()
+        }
     }
 }
 
