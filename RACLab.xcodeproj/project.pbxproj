@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B052257E2D716C2200172657 /* BaseFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05225752D716C1800172657 /* BaseFeature.framework */; };
-		B052257F2D716C2200172657 /* BaseFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B05225752D716C1800172657 /* BaseFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B06C83672D6C27FA00DCB5A2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B06C83662D6C27FA00DCB5A2 /* .gitignore */; };
 		B06C837A2D6CA59300DCB5A2 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B06C83792D6CA59300DCB5A2 /* .swiftlint.yml */; };
+		B07162212D734EA4009EB686 /* ThirdPartyModule in Frameworks */ = {isa = PBXBuildFile; productRef = B07162202D734EA4009EB686 /* ThirdPartyModule */; };
+		B0C30EDD2D7343EF00C9240E /* BaseFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C30ED42D7343AE00C9240E /* BaseFeature.framework */; };
+		B0C30EDE2D7343EF00C9240E /* BaseFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0C30ED42D7343AE00C9240E /* BaseFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B05225742D716C1800172657 /* PBXContainerItemProxy */ = {
+		B0C30ED32D7343AE00C9240E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B05225592D716C1800172657 /* BaseFeature.xcodeproj */;
 			proxyType = 2;
@@ -31,13 +32,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B05225802D716C2200172657 /* Embed Frameworks */ = {
+		B0C30EDF2D7343EF00C9240E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B052257F2D716C2200172657 /* BaseFeature.framework in Embed Frameworks */,
+				B0C30EDE2D7343EF00C9240E /* BaseFeature.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +49,7 @@
 		B05225592D716C1800172657 /* BaseFeature.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BaseFeature.xcodeproj; path = ../RACLab_Packages/BaseFeature/BaseFeature.xcodeproj; sourceTree = "<group>"; };
 		B06C83662D6C27FA00DCB5A2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		B06C83792D6CA59300DCB5A2 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		B0DB0D4F2D734DD8001D0875 /* ThirdPartyModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ThirdPartyModule; path = ../RACLab_Packages/ThirdPartyModule; sourceTree = SOURCE_ROOT; };
 		B0E7A0942D6B3EB600C8F575 /* RACLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E7A0A42D6B3EB700C8F575 /* RACLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,7 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B052257E2D716C2200172657 /* BaseFeature.framework in Frameworks */,
+				B0C30EDD2D7343EF00C9240E /* BaseFeature.framework in Frameworks */,
+				B07162212D734EA4009EB686 /* ThirdPartyModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +90,7 @@
 		B052255A2D716C1800172657 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B05225752D716C1800172657 /* BaseFeature.framework */,
+				B0C30ED42D7343AE00C9240E /* BaseFeature.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +106,7 @@
 		B0E7A08B2D6B3EB600C8F575 = {
 			isa = PBXGroup;
 			children = (
+				B0DB0D4F2D734DD8001D0875 /* ThirdPartyModule */,
 				B06C83792D6CA59300DCB5A2 /* .swiftlint.yml */,
 				B06C83662D6C27FA00DCB5A2 /* .gitignore */,
 				B0E7A0962D6B3EB600C8F575 /* RACLab */,
@@ -132,7 +136,7 @@
 				B06C837B2D6D864400DCB5A2 /* SwiftLint */,
 				B0E7A0912D6B3EB600C8F575 /* Frameworks */,
 				B0E7A0922D6B3EB600C8F575 /* Resources */,
-				B05225802D716C2200172657 /* Embed Frameworks */,
+				B0C30EDF2D7343EF00C9240E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,6 +147,7 @@
 			);
 			name = RACLab;
 			packageProductDependencies = (
+				B07162202D734EA4009EB686 /* ThirdPartyModule */,
 			);
 			productName = RACLab;
 			productReference = B0E7A0942D6B3EB600C8F575 /* RACLab.app */;
@@ -199,6 +204,8 @@
 			);
 			mainGroup = B0E7A08B2D6B3EB600C8F575;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B0E7A0952D6B3EB600C8F575 /* Products */;
 			projectDirPath = "";
@@ -217,11 +224,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		B05225752D716C1800172657 /* BaseFeature.framework */ = {
+		B0C30ED42D7343AE00C9240E /* BaseFeature.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = BaseFeature.framework;
-			remoteRef = B05225742D716C1800172657 /* PBXContainerItemProxy */;
+			remoteRef = B0C30ED32D7343AE00C9240E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -552,6 +559,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B07162202D734EA4009EB686 /* ThirdPartyModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ThirdPartyModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B0E7A08C2D6B3EB600C8F575 /* Project object */;
 }
