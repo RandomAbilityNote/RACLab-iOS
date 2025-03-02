@@ -7,7 +7,7 @@ struct ContentView: View {
         VStack {
           Button {
             let numbers = [0]
-            let _ = numbers[1]
+            _ = numbers[1]
           } label: {
             Image(systemName: "globe")
                 .imageScale(.large)
