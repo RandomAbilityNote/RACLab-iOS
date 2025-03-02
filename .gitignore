@@ -10,6 +10,6 @@
 ## User settings
 xcuserdata/
 
-## Resource
-/Resources/GoogleService-Info.plist
+### Google
+GoogleService-Info.plist
 
