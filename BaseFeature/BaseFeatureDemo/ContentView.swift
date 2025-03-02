@@ -1,26 +1,21 @@
+//
+//  ContentView.swift
+//  BaseFeatureDemo
+//
+//  Created by yongbeomkwak on 2/28/25.
+//
+
 import SwiftUI
-import BaseFeature
-import Util
 
 struct ContentView: View {
     var body: some View {
         VStack {
-          Button {
-            let numbers = [0]
-            _ = numbers[1]
-          } label: {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-          }
+            Text("Hello, world!")
         }
         .padding()
-        .onAppear {
-          let bcccc = BaseFeatureTest()
-          bcccc.run()
-          print(APP_VERSION())
-
-        }
     }
 }
 
