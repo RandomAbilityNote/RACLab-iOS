@@ -17,8 +17,8 @@ disabled_rules: # 기본적으로 활성화된 규칙 중에서 제외할 항목
 # included: 검사할 파일/폴더 경로를 지정 (커맨드라인에서 제공하는 경로보다 우선)
   # - Sources → Sources 디렉터리 내의 파일을 검사
 excluded: # 검사에서 제외할 파일/폴더 지정
-  - RACLabTests
-  - RACLabUITests
+  - "**/*Package.swift"
+  - "**/*Tests.swift"
 # - Carthage, Pods → 패키지 매니저 관련 폴더 제외
 # - Sources/ExcludedFolder, Sources/ExcludedFile.swift → 특정 폴더 및 파일 제외
 # - Sources/*/ExcludedFile.swift → 와일드카드(*)를 사용해 특정 패턴의 파일 제외

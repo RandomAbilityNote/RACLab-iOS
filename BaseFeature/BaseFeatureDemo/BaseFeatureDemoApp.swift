@@ -1,7 +1,8 @@
 import SwiftUI
+import BaseFeature
 
 @main
-struct RACLabApp: App {
+struct BaseFeatureDemoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -1,7 +1,7 @@
-# General
+## General
 .DS_Store
 
-### Xcode Patch ###
+## Xcode Patch ###
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
 !*.xcodeproj/xcshareddata/
@@ -9,4 +9,7 @@
 
 ## User settings
 xcuserdata/
+
+### Google
+GoogleService-Info.plist
 
