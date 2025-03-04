@@ -11,18 +11,9 @@
 		B06C83672D6C27FA00DCB5A2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B06C83662D6C27FA00DCB5A2 /* .gitignore */; };
 		B06C837A2D6CA59300DCB5A2 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B06C83792D6CA59300DCB5A2 /* .swiftlint.yml */; };
 		B0B467EA2D744423004FB7AE /* SharedModule in Frameworks */ = {isa = PBXBuildFile; productRef = B0B467E92D744423004FB7AE /* SharedModule */; };
-		B0B46C952D7485DF004FB7AE /* BaseFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B46C8C2D7485CE004FB7AE /* BaseFeature.framework */; };
-		B0B46C962D7485DF004FB7AE /* BaseFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0B46C8C2D7485CE004FB7AE /* BaseFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B0B46C8B2D7485CE004FB7AE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B0B46C702D7485CE004FB7AE /* BaseFeature.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B0A88FA62D71537800F3BCA1;
-			remoteInfo = BaseFeature;
-		};
 		B0E7A0A52D6B3EB700C8F575 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B0E7A08C2D6B3EB600C8F575 /* Project object */;
@@ -39,7 +30,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B0B46C962D7485DF004FB7AE /* BaseFeature.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +40,6 @@
 		B06C83662D6C27FA00DCB5A2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		B06C83792D6CA59300DCB5A2 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		B0B467E72D74420B004FB7AE /* SharedModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SharedModule; sourceTree = "<group>"; };
-		B0B46C702D7485CE004FB7AE /* BaseFeature.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BaseFeature.xcodeproj; path = BaseFeature/BaseFeature.xcodeproj; sourceTree = "<group>"; };
 		B0B46C9A2D748647004FB7AE /* ThirdPartyModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ThirdPartyModule; sourceTree = "<group>"; };
 		B0E7A0942D6B3EB600C8F575 /* RACLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E7A0A42D6B3EB700C8F575 /* RACLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0B46C952D7485DF004FB7AE /* BaseFeature.framework in Frameworks */,
 				B05352642D7487A600961EAC /* ThirdPartyModule in Frameworks */,
 				B0B467EA2D744423004FB7AE /* SharedModule in Frameworks */,
 			);
@@ -93,17 +81,8 @@
 		B05EBD632D7081D0005BF177 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B0B46C702D7485CE004FB7AE /* BaseFeature.xcodeproj */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B0B46C712D7485CE004FB7AE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B0B46C8C2D7485CE004FB7AE /* BaseFeature.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		B0E7A08B2D6B3EB600C8F575 = {
@@ -215,12 +194,6 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B0E7A0952D6B3EB600C8F575 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = B0B46C712D7485CE004FB7AE /* Products */;
-					ProjectRef = B0B46C702D7485CE004FB7AE /* BaseFeature.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				B0E7A0932D6B3EB600C8F575 /* RACLab */,
@@ -228,16 +201,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		B0B46C8C2D7485CE004FB7AE /* BaseFeature.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = BaseFeature.framework;
-			remoteRef = B0B46C8B2D7485CE004FB7AE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B0E7A0922D6B3EB600C8F575 /* Resources */ = {
