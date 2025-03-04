@@ -15,12 +15,6 @@ struct ContentView: View {
           }
         }
         .padding()
-        .onAppear {
-          let bcccc = BaseFeatureTest()
-          bcccc.run()
-          print(APP_VERSION())
-
-        }
     }
 }
 
