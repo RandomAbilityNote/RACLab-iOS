@@ -2,7 +2,7 @@ import SwiftUI
 import DesignSystem
 
 struct MainTabView: View {
-  @State private var tab: Tab = .search
+  @State private var activatedTab: Tab = .search
 
   private let tabs: [Tab] = [.search, .category]
 
@@ -20,19 +20,36 @@ struct MainTabView: View {
 
   @ViewBuilder
   func mainTabBar() -> some View {
-    HStack(spacing: .zero) {
+    HStack(spacing: 60) {
       ForEach(tabs, id: \.index) { tab in
-        Text(tab.title)
-        TabBarItem(tab: tab)
+        TabBarItem(tab: tab, activatedTab: $activatedTab)
       }
     }
+    .frame(maxWidth: .infinity)
+    .background(.red)
   }
 }
 
 struct TabBarItem: View {
-  let tab: Tab
+  private let tab: Tab
+  @Binding var activatedTab: Tab
+
+  init(tab: Tab, activatedTab: Binding<Tab>) {
+    self.tab = tab
+    self._activatedTab = activatedTab
+  }
+
   var body: some View {
-    tab.activatedImage
+    VStack(spacing: 5) {
+      Image(uiImage: tab == activatedTab ? tab.activatedImage : tab.deActivatedImage)
+        .frame(width: 35, height: 35)
+      Text(tab.title)
+        .foregroundStyle(tab == activatedTab ? tab.activatedColor : Color.gray)
+        .multilineTextAlignment(.center)
+    }.onTapGesture {
+      activatedTab = tab
+    }
+    .background(.blue)
   }
 }
 

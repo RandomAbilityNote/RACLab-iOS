@@ -23,7 +23,16 @@ enum Tab: Hashable {
     }
   }
 
-  var activatedImage: Image {
+  var activatedColor: Color {
+    switch self {
+    case .search:
+      return Color.ColorSystem.hilightedGreen
+    case .category:
+      return Color.ColorSystem.hilightedPink
+    }
+  }
+
+  var activatedImage: UIImage {
     switch self {
     case .search:
       return .ImageSystem.TabBar.activatedSearch
@@ -32,7 +41,7 @@ enum Tab: Hashable {
     }
   }
 
-  var deActivatedImage: Image {
+  var deActivatedImage: UIImage {
     switch self {
     case .search:
       return .ImageSystem.TabBar.deActivatedSearch
