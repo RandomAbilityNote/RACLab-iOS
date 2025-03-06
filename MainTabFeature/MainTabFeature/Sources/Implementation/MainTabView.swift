@@ -11,6 +11,7 @@ struct MainTabView: View {
     VStack(spacing: .zero) {
       TabView {
         Text("Search")
+          .font(DesignSystemFontFamily.Galmuri11.regular.font(size: 20))
           .tag(Tab.search)
           .background(.green)
         Text("Category")
@@ -32,18 +33,24 @@ struct MainTabView: View {
       }
       .offset(y: 20)
     }
+    .frame(height: 86)
     .frame(maxWidth: .infinity)
-    .background(LinearGradient(stops: [
-      .init(color: Color(hex: 0x11152D), location: 0.3),
-      .init(color: Color(hex: 0x0E0E0E), location: 1)
-  ], startPoint: .top, endPoint: .bottom))
+    .background(
+      LinearGradient(
+        stops: [
+          .init(color: Color(hex: 0x11152D), location: 0.3),
+          .init(color: Color(hex: 0x0E0E0E), location: 1)
+        ],
+        startPoint: .top, endPoint: .bottom
+      )
+    )
   }
 }
 
 struct TabBarItem: View {
   private let tab: Tab
   @Binding var activatedTab: Tab
-
+  
   init(tab: Tab, activatedTab: Binding<Tab>) {
     self.tab = tab
     self._activatedTab = activatedTab
@@ -56,7 +63,10 @@ struct TabBarItem: View {
         .scaledToFit()
         .frame(width: 40, height: 40)
       Text(tab.title)
-        .foregroundStyle(tab == activatedTab ? tab.activatedColor : Color.gray)
+        .foregroundStyle(
+          tab == activatedTab ?
+          tab.activatedColor : Color.ColorSystem.Gray.gray2
+        )
     }
     .padding(.top, 5)
     .contentShape(Rectangle())

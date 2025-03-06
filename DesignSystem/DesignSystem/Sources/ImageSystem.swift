@@ -1,7 +1,7 @@
 import UIKit
 
-extension UIImage {
-  public enum ImageSystem {
+public extension UIImage {
+  enum ImageSystem {
     public enum TabBar {
       public static let activatedSearch = UIImage(
         named: "ActivatedSearch",

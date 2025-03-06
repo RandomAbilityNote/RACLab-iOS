@@ -1,4 +1,5 @@
 disabled_rules: # 기본적으로 활성화된 규칙 중에서 제외할 항목을 지정
+  - nesting
 
 
 #opt_in_rules: #기본적으로 꺼져 있는 규칙 중에서 활성화할 항목을 지정
