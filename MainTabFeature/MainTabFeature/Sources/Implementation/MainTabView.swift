@@ -1,5 +1,6 @@
-import SwiftUI
 import DesignSystem
+import SwiftUI
+import Util
 
 struct MainTabView: View {
   @State private var activatedTab: Tab = .search
@@ -11,22 +12,31 @@ struct MainTabView: View {
       TabView {
         Text("Search")
           .tag(Tab.search)
+          .background(.green)
         Text("Category")
           .tag(Tab.category)
       }
-      mainTabBar()
+      MainTabBar()
     }
   }
 
   @ViewBuilder
-  func mainTabBar() -> some View {
-    HStack(spacing: 60) {
-      ForEach(tabs, id: \.index) { tab in
-        TabBarItem(tab: tab, activatedTab: $activatedTab)
+  private func MainTabBar() -> some View {
+    HStack(spacing: 0) {
+      Group {
+        Spacer()
+        TabBarItem(tab: .search, activatedTab: $activatedTab)
+        Spacer()
+        TabBarItem(tab: .category, activatedTab: $activatedTab)
+        Spacer()
       }
+      .offset(y: 20)
     }
     .frame(maxWidth: .infinity)
-    .background(.red)
+    .background(LinearGradient(stops: [
+      .init(color: Color(hex: 0x11152D), location: 0.3),
+      .init(color: Color(hex: 0x0E0E0E), location: 1)
+  ], startPoint: .top, endPoint: .bottom))
   }
 }
 
@@ -42,14 +52,18 @@ struct TabBarItem: View {
   var body: some View {
     VStack(spacing: 5) {
       Image(uiImage: tab == activatedTab ? tab.activatedImage : tab.deActivatedImage)
-        .frame(width: 35, height: 35)
+        .resizable()
+        .scaledToFit()
+        .frame(width: 40, height: 40)
       Text(tab.title)
         .foregroundStyle(tab == activatedTab ? tab.activatedColor : Color.gray)
-        .multilineTextAlignment(.center)
-    }.onTapGesture {
+    }
+    .padding(.top, 5)
+    .contentShape(Rectangle())
+    .onTapGesture {
       activatedTab = tab
     }
-    .background(.blue)
+
   }
 }
 

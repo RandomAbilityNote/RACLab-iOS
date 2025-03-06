@@ -11,6 +11,7 @@
 		B03FC7FD2D71655E00F006ED /* BaseFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0A88FA62D71537800F3BCA1 /* BaseFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B07F39102D78796100F4D6CC /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07F390D2D78795C00F4D6CC /* DesignSystem.framework */; };
 		B07F39112D78796100F4D6CC /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B07F390D2D78795C00F4D6CC /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B098F2E12D797CF200D490D3 /* SharedModule in Frameworks */ = {isa = PBXBuildFile; productRef = B098F2E02D797CF200D490D3 /* SharedModule */; };
 		B0A88FAF2D71537800F3BCA1 /* BaseFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A88FA62D71537800F3BCA1 /* BaseFeature.framework */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B07F39102D78796100F4D6CC /* DesignSystem.framework in Frameworks */,
+				B098F2E12D797CF200D490D3 /* SharedModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +301,7 @@
 			);
 			name = BaseFeature;
 			packageProductDependencies = (
+				B098F2E02D797CF200D490D3 /* SharedModule */,
 			);
 			productName = BaseFeature;
 			productReference = B0A88FA62D71537800F3BCA1 /* BaseFeature.framework */;
@@ -952,6 +955,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B098F2E02D797CF200D490D3 /* SharedModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharedModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B0A88F9D2D71537800F3BCA1 /* Project object */;
 }
