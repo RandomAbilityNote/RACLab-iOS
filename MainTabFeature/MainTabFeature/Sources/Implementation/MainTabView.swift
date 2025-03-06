@@ -1,6 +1,6 @@
 import DesignSystem
 import SwiftUI
-import Util
+internal import Util
 
 struct MainTabView: View {
   @State private var activatedTab: Tab = .search
