@@ -1,4 +1,3 @@
-import DesignSystem
 import Firebase
 import FirebaseAnalytics
 import FirebaseCore
@@ -25,9 +24,6 @@ struct RACLabApp: App {
         WindowGroup {
           appComponent
             .mainTabBuilder.build()
-            .onAppear {
-              DesignSystemFontFamily.registerAllCustomFonts()
-            }
         }
     }
 }
