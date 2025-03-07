@@ -24,16 +24,15 @@ struct MainTabView: View {
   @ViewBuilder
   private func MainTabBar() -> some View {
     HStack(spacing: 0) {
-      Group {
-        Spacer()
-        TabBarItem(tab: .search, activatedTab: $activatedTab)
-        Spacer()
-        TabBarItem(tab: .category, activatedTab: $activatedTab)
-        Spacer()
-      }
+      Spacer()
+      TabBarItem(tab: .search, activatedTab: $activatedTab)
+      Spacer()
+      TabBarItem(tab: .category, activatedTab: $activatedTab)
+      Spacer()
     }
-    .frame(height: 86)
+    .offset(y: 7)
     .frame(maxWidth: .infinity)
+    .padding(.bottom, 10)
     .background(
       LinearGradient(
         stops: [
@@ -49,7 +48,7 @@ struct MainTabView: View {
 struct TabBarItem: View {
   private let tab: Tab
   @Binding var activatedTab: Tab
-  
+
   init(tab: Tab, activatedTab: Binding<Tab>) {
     self.tab = tab
     self._activatedTab = activatedTab
@@ -67,7 +66,6 @@ struct TabBarItem: View {
           tab.activatedColor : Color.ColorSystem.Gray.gray2
         )
     }
-    .padding(.top, 5)
     .contentShape(Rectangle())
     .onTapGesture {
       activatedTab = tab
