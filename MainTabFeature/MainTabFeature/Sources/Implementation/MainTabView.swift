@@ -4,7 +4,6 @@ internal import Util
 
 struct MainTabView: View {
   @State private var activatedTab: Tab = .search
-
   private let tabs: [Tab] = [.search, .category]
 
   var body: some View {
