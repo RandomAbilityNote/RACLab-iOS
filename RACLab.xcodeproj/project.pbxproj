@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B05352642D7487A600961EAC /* ThirdPartyModule in Frameworks */ = {isa = PBXBuildFile; productRef = B05352632D7487A600961EAC /* ThirdPartyModule */; };
 		B06C83672D6C27FA00DCB5A2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B06C83662D6C27FA00DCB5A2 /* .gitignore */; };
 		B06C837A2D6CA59300DCB5A2 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B06C83792D6CA59300DCB5A2 /* .swiftlint.yml */; };
 		B077ACC32D77476B007B9DB0 /* RootFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B077ACBC2D774765007B9DB0 /* RootFeature.framework */; };
 		B077ACC42D77476B007B9DB0 /* RootFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B077ACBC2D774765007B9DB0 /* RootFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B0B467EA2D744423004FB7AE /* SharedModule in Frameworks */ = {isa = PBXBuildFile; productRef = B0B467E92D744423004FB7AE /* SharedModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +48,6 @@
 		B06C83662D6C27FA00DCB5A2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		B06C83792D6CA59300DCB5A2 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		B077AC8C2D774765007B9DB0 /* RootFeature.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RootFeature.xcodeproj; path = RootFeature/RootFeature.xcodeproj; sourceTree = "<group>"; };
-		B0B467E72D74420B004FB7AE /* SharedModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SharedModule; sourceTree = "<group>"; };
-		B0B46C9A2D748647004FB7AE /* ThirdPartyModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ThirdPartyModule; sourceTree = "<group>"; };
 		B0E7A0942D6B3EB600C8F575 /* RACLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E7A0A42D6B3EB700C8F575 /* RACLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -74,9 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B05352642D7487A600961EAC /* ThirdPartyModule in Frameworks */,
 				B077ACC32D77476B007B9DB0 /* RootFeature.framework in Frameworks */,
-				B0B467EA2D744423004FB7AE /* SharedModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,8 +103,6 @@
 		B0E7A08B2D6B3EB600C8F575 = {
 			isa = PBXGroup;
 			children = (
-				B0B46C9A2D748647004FB7AE /* ThirdPartyModule */,
-				B0B467E72D74420B004FB7AE /* SharedModule */,
 				B06C83792D6CA59300DCB5A2 /* .swiftlint.yml */,
 				B06C83662D6C27FA00DCB5A2 /* .gitignore */,
 				B0E7A0962D6B3EB600C8F575 /* RACLab */,
@@ -152,8 +144,6 @@
 			);
 			name = RACLab;
 			packageProductDependencies = (
-				B0B467E92D744423004FB7AE /* SharedModule */,
-				B05352632D7487A600961EAC /* ThirdPartyModule */,
 			);
 			productName = RACLab;
 			productReference = B0E7A0942D6B3EB600C8F575 /* RACLab.app */;
@@ -592,17 +582,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		B05352632D7487A600961EAC /* ThirdPartyModule */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ThirdPartyModule;
-		};
-		B0B467E92D744423004FB7AE /* SharedModule */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = SharedModule;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B0E7A08C2D6B3EB600C8F575 /* Project object */;
 }

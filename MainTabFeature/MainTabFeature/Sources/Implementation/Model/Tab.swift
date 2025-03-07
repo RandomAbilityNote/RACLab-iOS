@@ -26,9 +26,9 @@ enum Tab: Hashable {
   var activatedColor: Color {
     switch self {
     case .search:
-      return Color.ColorSystem.hilightedGreen
+      return .ColorSystem.hilightedGreen
     case .category:
-      return Color.ColorSystem.hilightedPink
+      return .ColorSystem.hilightedPink
     }
   }
 

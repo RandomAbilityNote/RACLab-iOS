@@ -11,7 +11,8 @@
 		B03FC7FD2D71655E00F006ED /* BaseFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0A88FA62D71537800F3BCA1 /* BaseFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B07F39102D78796100F4D6CC /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07F390D2D78795C00F4D6CC /* DesignSystem.framework */; };
 		B07F39112D78796100F4D6CC /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B07F390D2D78795C00F4D6CC /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B098F2E12D797CF200D490D3 /* SharedModule in Frameworks */ = {isa = PBXBuildFile; productRef = B098F2E02D797CF200D490D3 /* SharedModule */; };
+		B098F6632D7B168900D490D3 /* ThirdPartyModule in Frameworks */ = {isa = PBXBuildFile; productRef = B098F6622D7B168900D490D3 /* ThirdPartyModule */; };
+		B098F6662D7B180500D490D3 /* SharedModule in Frameworks */ = {isa = PBXBuildFile; productRef = B098F6652D7B180500D490D3 /* SharedModule */; };
 		B0A88FAF2D71537800F3BCA1 /* BaseFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A88FA62D71537800F3BCA1 /* BaseFeature.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,8 @@
 		B03FC7E12D7164D700F006ED /* BaseFeatureDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseFeatureDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B03FC7EB2D7164D700F006ED /* BaseFeatureDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseFeatureDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07F38FF2D78795C00F4D6CC /* DesignSystem.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DesignSystem.xcodeproj; path = ../DesignSystem/DesignSystem.xcodeproj; sourceTree = "<group>"; };
+		B098F65D2D7B166100D490D3 /* ThirdPartyModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ThirdPartyModule; path = ../ThirdPartyModule; sourceTree = "<group>"; };
+		B098F6642D7B180100D490D3 /* SharedModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SharedModule; path = ../SharedModule; sourceTree = "<group>"; };
 		B0A88FA62D71537800F3BCA1 /* BaseFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A88FAE2D71537800F3BCA1 /* BaseFeatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseFeatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -143,7 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B07F39102D78796100F4D6CC /* DesignSystem.framework in Frameworks */,
-				B098F2E12D797CF200D490D3 /* SharedModule in Frameworks */,
+				B098F6632D7B168900D490D3 /* ThirdPartyModule in Frameworks */,
+				B098F6662D7B180500D490D3 /* SharedModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +165,8 @@
 		B04389912D7155E6002489CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B098F6642D7B180100D490D3 /* SharedModule */,
+				B098F65D2D7B166100D490D3 /* ThirdPartyModule */,
 				B07F38FF2D78795C00F4D6CC /* DesignSystem.xcodeproj */,
 			);
 			name = Frameworks;
@@ -301,7 +307,8 @@
 			);
 			name = BaseFeature;
 			packageProductDependencies = (
-				B098F2E02D797CF200D490D3 /* SharedModule */,
+				B098F6622D7B168900D490D3 /* ThirdPartyModule */,
+				B098F6652D7B180500D490D3 /* SharedModule */,
 			);
 			productName = BaseFeature;
 			productReference = B0A88FA62D71537800F3BCA1 /* BaseFeature.framework */;
@@ -957,7 +964,11 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B098F2E02D797CF200D490D3 /* SharedModule */ = {
+		B098F6622D7B168900D490D3 /* ThirdPartyModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ThirdPartyModule;
+		};
+		B098F6652D7B180500D490D3 /* SharedModule */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SharedModule;
 		};
