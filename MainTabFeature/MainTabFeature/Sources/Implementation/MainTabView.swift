@@ -31,7 +31,6 @@ struct MainTabView: View {
         TabBarItem(tab: .category, activatedTab: $activatedTab)
         Spacer()
       }
-      .offset(y: 20)
     }
     .frame(height: 86)
     .frame(maxWidth: .infinity)
