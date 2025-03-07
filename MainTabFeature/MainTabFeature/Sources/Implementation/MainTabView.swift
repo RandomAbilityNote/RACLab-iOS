@@ -11,7 +11,7 @@ struct MainTabView: View {
     VStack(spacing: .zero) {
       TabView {
         Text("Search")
-          .font(DesignSystemFontFamily.Galmuri11.regular.font(size: 20))
+          .font(.pretendard(size: 20, weight: .bold))
           .tag(Tab.search)
           .background(.green)
         Text("Category")

@@ -39,6 +39,12 @@ public extension DesignSystemFontConvertible.Font {
 
 public enum DesignSystemFontFamily: Sendable {
   public enum Pretendard: Sendable {
+    public enum Family {
+      case bold
+      case light
+      case medium
+      case regular
+    }
     public static let bold = DesignSystemFontConvertible(
       name: "Pretendard-Bold",
       family: "Pretendard",
@@ -62,6 +68,10 @@ public enum DesignSystemFontFamily: Sendable {
     public static let all: [DesignSystemFontConvertible] = [bold, light, medium, regular]
   }
   public enum Galmuri11: Sendable {
+    public enum Family {
+      case bold
+      case regular
+    }
     public static let regular = DesignSystemFontConvertible(
       name: "Galmuri11-Regular",
       family: "Galmuri11-Regular",
