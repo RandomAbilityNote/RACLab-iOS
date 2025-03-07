@@ -1,6 +1,5 @@
 import SwiftUI
 import BaseFeature
-import Util
 
 struct ContentView: View {
     var body: some View {
@@ -15,12 +14,6 @@ struct ContentView: View {
           }
         }
         .padding()
-        .onAppear {
-          let bcccc = BaseFeatureTest()
-          bcccc.run()
-          print(APP_VERSION())
-
-        }
     }
 }
 

@@ -2,10 +2,11 @@ import Firebase
 import FirebaseAnalytics
 import FirebaseCore
 import FirebaseCrashlytics
+import RootFeature
 import SwiftUI
 import UIKit
 
-class AppDelegate: UIResponder, UIApplicationDelegate {
+final class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(
       _ application: UIApplication,
       didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
@@ -18,9 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 @main
 struct RACLabApp: App {
   @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+  private let appComponent = AppComponent()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          appComponent
+            .mainTabBuilder.build()
         }
     }
 }
