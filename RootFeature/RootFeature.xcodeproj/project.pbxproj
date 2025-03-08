@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B05E8AA52D7C36140070A54C /* MainTabFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E8AA42D7C36140070A54C /* MainTabFeature.framework */; };
-		B05E8AA62D7C36140070A54C /* MainTabFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B05E8AA42D7C36140070A54C /* MainTabFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B05E8B602D7C38200070A54C /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8B5C2D7C38200070A54C /* AppComponent.swift */; };
+		B05E8B632D7C38200070A54C /* RootFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8B612D7C38200070A54C /* RootFeatureTests.swift */; };
+		B05E8BCF2D7C397C0070A54C /* MainTabFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E8BCE2D7C397C0070A54C /* MainTabFeature.framework */; };
+		B05E8BD02D7C397C0070A54C /* MainTabFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B05E8BCE2D7C397C0070A54C /* MainTabFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B077ABB12D77338D007B9DB0 /* RootFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B077ABA82D77338D007B9DB0 /* RootFeature.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,13 +25,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B077AC8B2D7745AA007B9DB0 /* Embed Frameworks */ = {
+		B05E8BD12D7C397C0070A54C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B05E8AA62D7C36140070A54C /* MainTabFeature.framework in Embed Frameworks */,
+				B05E8BD02D7C397C0070A54C /* MainTabFeature.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,30 +39,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B05E8AA42D7C36140070A54C /* MainTabFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MainTabFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B05E8B5C2D7C38200070A54C /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		B05E8B612D7C38200070A54C /* RootFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFeatureTests.swift; sourceTree = "<group>"; };
+		B05E8BCE2D7C397C0070A54C /* MainTabFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MainTabFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B077ABA82D77338D007B9DB0 /* RootFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RootFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B077ABB02D77338D007B9DB0 /* RootFeatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RootFeatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		B077ABAA2D77338D007B9DB0 /* RootFeature */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = RootFeature;
-			sourceTree = "<group>";
-		};
-		B077ABB42D77338D007B9DB0 /* RootFeatureTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = RootFeatureTests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B077ABA52D77338D007B9DB0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B05E8AA52D7C36140070A54C /* MainTabFeature.framework in Frameworks */,
+				B05E8BCF2D7C397C0070A54C /* MainTabFeature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,11 +66,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B05E8B5D2D7C38200070A54C /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				B05E8B5C2D7C38200070A54C /* AppComponent.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		B05E8B5E2D7C38200070A54C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B05E8B5D2D7C38200070A54C /* Implementation */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B05E8B5F2D7C38200070A54C /* RootFeature */ = {
+			isa = PBXGroup;
+			children = (
+				B05E8B5E2D7C38200070A54C /* Sources */,
+			);
+			path = RootFeature;
+			sourceTree = "<group>";
+		};
+		B05E8B622D7C38200070A54C /* RootFeatureTests */ = {
+			isa = PBXGroup;
+			children = (
+				B05E8B612D7C38200070A54C /* RootFeatureTests.swift */,
+			);
+			path = RootFeatureTests;
+			sourceTree = "<group>";
+		};
 		B077AB9E2D77338D007B9DB0 = {
 			isa = PBXGroup;
 			children = (
-				B077ABAA2D77338D007B9DB0 /* RootFeature */,
-				B077ABB42D77338D007B9DB0 /* RootFeatureTests */,
+				B05E8B5F2D7C38200070A54C /* RootFeature */,
+				B05E8B622D7C38200070A54C /* RootFeatureTests */,
 				B077ABC22D773469007B9DB0 /* Frameworks */,
 				B077ABA92D77338D007B9DB0 /* Products */,
 			);
@@ -97,7 +120,7 @@
 		B077ABC22D773469007B9DB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B05E8AA42D7C36140070A54C /* MainTabFeature.framework */,
+				B05E8BCE2D7C397C0070A54C /* MainTabFeature.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,14 +146,11 @@
 				B077ABA42D77338D007B9DB0 /* Sources */,
 				B077ABA52D77338D007B9DB0 /* Frameworks */,
 				B077ABA62D77338D007B9DB0 /* Resources */,
-				B077AC8B2D7745AA007B9DB0 /* Embed Frameworks */,
+				B05E8BD12D7C397C0070A54C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				B077ABAA2D77338D007B9DB0 /* RootFeature */,
 			);
 			name = RootFeature;
 			packageProductDependencies = (
@@ -151,9 +171,6 @@
 			);
 			dependencies = (
 				B077ABB32D77338D007B9DB0 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				B077ABB42D77338D007B9DB0 /* RootFeatureTests */,
 			);
 			name = RootFeatureTests;
 			packageProductDependencies = (
@@ -223,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B05E8B602D7C38200070A54C /* AppComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B05E8B632D7C38200070A54C /* RootFeatureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,11 +290,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yongbeomkwak.RootFeature;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -306,10 +329,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yongbeomkwak.RootFeature;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

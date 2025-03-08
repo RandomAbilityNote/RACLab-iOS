@@ -10,6 +10,7 @@
 		B05E8A512D7C341B0070A54C /* SearchFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E8A482D7C341A0070A54C /* SearchFeature.framework */; };
 		B05E8AA12D7C360E0070A54C /* BaseFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E8AA02D7C360E0070A54C /* BaseFeature.framework */; };
 		B05E8AA22D7C360E0070A54C /* BaseFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B05E8AA02D7C360E0070A54C /* BaseFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B05E8B672D7C38280070A54C /* SearchFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8B652D7C38280070A54C /* SearchFeatureTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,20 +41,8 @@
 		B05E8A482D7C341A0070A54C /* SearchFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SearchFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B05E8A502D7C341B0070A54C /* SearchFeatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchFeatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B05E8AA02D7C360E0070A54C /* BaseFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B05E8B652D7C38280070A54C /* SearchFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFeatureTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		B05E8A4A2D7C341A0070A54C /* SearchFeature */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SearchFeature;
-			sourceTree = "<group>";
-		};
-		B05E8A542D7C341B0070A54C /* SearchFeatureTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SearchFeatureTests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B05E8A452D7C341A0070A54C /* Frameworks */ = {
@@ -78,8 +67,8 @@
 		B05E8A3E2D7C341A0070A54C = {
 			isa = PBXGroup;
 			children = (
-				B05E8A4A2D7C341A0070A54C /* SearchFeature */,
-				B05E8A542D7C341B0070A54C /* SearchFeatureTests */,
+				B05E8B642D7C38280070A54C /* SearchFeature */,
+				B05E8B662D7C38280070A54C /* SearchFeatureTests */,
 				B05E8A9F2D7C360E0070A54C /* Frameworks */,
 				B05E8A492D7C341A0070A54C /* Products */,
 			);
@@ -100,6 +89,21 @@
 				B05E8AA02D7C360E0070A54C /* BaseFeature.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B05E8B642D7C38280070A54C /* SearchFeature */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SearchFeature;
+			sourceTree = "<group>";
+		};
+		B05E8B662D7C38280070A54C /* SearchFeatureTests */ = {
+			isa = PBXGroup;
+			children = (
+				B05E8B652D7C38280070A54C /* SearchFeatureTests.swift */,
+			);
+			path = SearchFeatureTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,9 +133,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				B05E8A4A2D7C341A0070A54C /* SearchFeature */,
-			);
 			name = SearchFeature;
 			packageProductDependencies = (
 			);
@@ -151,9 +152,6 @@
 			);
 			dependencies = (
 				B05E8A532D7C341B0070A54C /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				B05E8A542D7C341B0070A54C /* SearchFeatureTests */,
 			);
 			name = SearchFeatureTests;
 			packageProductDependencies = (
@@ -229,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B05E8B672D7C38280070A54C /* SearchFeatureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

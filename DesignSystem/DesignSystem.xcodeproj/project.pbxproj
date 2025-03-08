@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B05E8BB92D7C38D10070A54C /* Galmuri11.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B05E8BA82D7C38D10070A54C /* Galmuri11.ttf */; };
+		B05E8BBA2D7C38D10070A54C /* Galmuri11-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B05E8BA92D7C38D10070A54C /* Galmuri11-Bold.ttf */; };
+		B05E8BBB2D7C38D10070A54C /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B05E8BAA2D7C38D10070A54C /* Pretendard-Bold.otf */; };
+		B05E8BBC2D7C38D10070A54C /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B05E8BAB2D7C38D10070A54C /* Pretendard-Light.otf */; };
+		B05E8BBD2D7C38D10070A54C /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B05E8BAC2D7C38D10070A54C /* Pretendard-Medium.otf */; };
+		B05E8BBE2D7C38D10070A54C /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B05E8BAD2D7C38D10070A54C /* Pretendard-Regular.otf */; };
+		B05E8BBF2D7C38D10070A54C /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B05E8BAF2D7C38D10070A54C /* Color.xcassets */; };
+		B05E8BC02D7C38D10070A54C /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B05E8BB02D7C38D10070A54C /* Image.xcassets */; };
+		B05E8BC12D7C38D10070A54C /* BundleFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8BB22D7C38D10070A54C /* BundleFinder.swift */; };
+		B05E8BC22D7C38D10070A54C /* ColorSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8BB32D7C38D10070A54C /* ColorSystem.swift */; };
+		B05E8BC32D7C38D10070A54C /* DesignSystemFontSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8BB42D7C38D10070A54C /* DesignSystemFontSystem.swift */; };
+		B05E8BC42D7C38D10070A54C /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8BB52D7C38D10070A54C /* Font+Extension.swift */; };
+		B05E8BC52D7C38D10070A54C /* ImageSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8BB62D7C38D10070A54C /* ImageSystem.swift */; };
+		B05E8BC82D7C38D10070A54C /* DesignSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8BC62D7C38D10070A54C /* DesignSystemTests.swift */; };
 		B06389FF2D78728000131B66 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06389F62D78728000131B66 /* DesignSystem.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,22 +35,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B05E8BA82D7C38D10070A54C /* Galmuri11.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Galmuri11.ttf; sourceTree = "<group>"; };
+		B05E8BA92D7C38D10070A54C /* Galmuri11-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Galmuri11-Bold.ttf"; sourceTree = "<group>"; };
+		B05E8BAA2D7C38D10070A54C /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		B05E8BAB2D7C38D10070A54C /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		B05E8BAC2D7C38D10070A54C /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		B05E8BAD2D7C38D10070A54C /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		B05E8BAF2D7C38D10070A54C /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		B05E8BB02D7C38D10070A54C /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		B05E8BB22D7C38D10070A54C /* BundleFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleFinder.swift; sourceTree = "<group>"; };
+		B05E8BB32D7C38D10070A54C /* ColorSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSystem.swift; sourceTree = "<group>"; };
+		B05E8BB42D7C38D10070A54C /* DesignSystemFontSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemFontSystem.swift; sourceTree = "<group>"; };
+		B05E8BB52D7C38D10070A54C /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		B05E8BB62D7C38D10070A54C /* ImageSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSystem.swift; sourceTree = "<group>"; };
+		B05E8BC62D7C38D10070A54C /* DesignSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemTests.swift; sourceTree = "<group>"; };
 		B06389F62D78728000131B66 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06389FE2D78728000131B66 /* DesignSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		B06389F82D78728000131B66 /* DesignSystem */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DesignSystem;
-			sourceTree = "<group>";
-		};
-		B0638A022D78728000131B66 /* DesignSystemTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DesignSystemTests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B06389F32D78728000131B66 /* Frameworks */ = {
@@ -57,11 +72,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B05E8BAE2D7C38D10070A54C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B05E8BA82D7C38D10070A54C /* Galmuri11.ttf */,
+				B05E8BA92D7C38D10070A54C /* Galmuri11-Bold.ttf */,
+				B05E8BAA2D7C38D10070A54C /* Pretendard-Bold.otf */,
+				B05E8BAB2D7C38D10070A54C /* Pretendard-Light.otf */,
+				B05E8BAC2D7C38D10070A54C /* Pretendard-Medium.otf */,
+				B05E8BAD2D7C38D10070A54C /* Pretendard-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B05E8BB12D7C38D10070A54C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B05E8BAE2D7C38D10070A54C /* Fonts */,
+				B05E8BAF2D7C38D10070A54C /* Color.xcassets */,
+				B05E8BB02D7C38D10070A54C /* Image.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B05E8BB72D7C38D10070A54C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B05E8BB22D7C38D10070A54C /* BundleFinder.swift */,
+				B05E8BB32D7C38D10070A54C /* ColorSystem.swift */,
+				B05E8BB42D7C38D10070A54C /* DesignSystemFontSystem.swift */,
+				B05E8BB52D7C38D10070A54C /* Font+Extension.swift */,
+				B05E8BB62D7C38D10070A54C /* ImageSystem.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B05E8BB82D7C38D10070A54C /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				B05E8BB12D7C38D10070A54C /* Resources */,
+				B05E8BB72D7C38D10070A54C /* Sources */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		B05E8BC72D7C38D10070A54C /* DesignSystemTests */ = {
+			isa = PBXGroup;
+			children = (
+				B05E8BC62D7C38D10070A54C /* DesignSystemTests.swift */,
+			);
+			path = DesignSystemTests;
+			sourceTree = "<group>";
+		};
 		B06389EC2D78728000131B66 = {
 			isa = PBXGroup;
 			children = (
-				B06389F82D78728000131B66 /* DesignSystem */,
-				B0638A022D78728000131B66 /* DesignSystemTests */,
+				B05E8BB82D7C38D10070A54C /* DesignSystem */,
+				B05E8BC72D7C38D10070A54C /* DesignSystemTests */,
 				B06389F72D78728000131B66 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,9 +168,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				B06389F82D78728000131B66 /* DesignSystem */,
-			);
 			name = DesignSystem;
 			packageProductDependencies = (
 			);
@@ -123,9 +187,6 @@
 			);
 			dependencies = (
 				B0638A012D78728000131B66 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				B0638A022D78728000131B66 /* DesignSystemTests */,
 			);
 			name = DesignSystemTests;
 			packageProductDependencies = (
@@ -178,6 +239,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B05E8BB92D7C38D10070A54C /* Galmuri11.ttf in Resources */,
+				B05E8BBA2D7C38D10070A54C /* Galmuri11-Bold.ttf in Resources */,
+				B05E8BBB2D7C38D10070A54C /* Pretendard-Bold.otf in Resources */,
+				B05E8BBC2D7C38D10070A54C /* Pretendard-Light.otf in Resources */,
+				B05E8BBD2D7C38D10070A54C /* Pretendard-Medium.otf in Resources */,
+				B05E8BBE2D7C38D10070A54C /* Pretendard-Regular.otf in Resources */,
+				B05E8BBF2D7C38D10070A54C /* Color.xcassets in Resources */,
+				B05E8BC02D7C38D10070A54C /* Image.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B05E8BC12D7C38D10070A54C /* BundleFinder.swift in Sources */,
+				B05E8BC22D7C38D10070A54C /* ColorSystem.swift in Sources */,
+				B05E8BC32D7C38D10070A54C /* DesignSystemFontSystem.swift in Sources */,
+				B05E8BC42D7C38D10070A54C /* Font+Extension.swift in Sources */,
+				B05E8BC52D7C38D10070A54C /* ImageSystem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B05E8BC82D7C38D10070A54C /* DesignSystemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
