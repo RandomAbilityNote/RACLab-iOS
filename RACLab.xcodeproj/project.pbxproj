@@ -7,20 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B05E8A962D7C353B0070A54C /* RootFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E8A952D7C353B0070A54C /* RootFeature.framework */; };
+		B05E8A972D7C353B0070A54C /* RootFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B05E8A952D7C353B0070A54C /* RootFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B06C83672D6C27FA00DCB5A2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B06C83662D6C27FA00DCB5A2 /* .gitignore */; };
 		B06C837A2D6CA59300DCB5A2 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B06C83792D6CA59300DCB5A2 /* .swiftlint.yml */; };
-		B077ACC32D77476B007B9DB0 /* RootFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B077ACBC2D774765007B9DB0 /* RootFeature.framework */; };
-		B077ACC42D77476B007B9DB0 /* RootFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B077ACBC2D774765007B9DB0 /* RootFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B077ACBB2D774765007B9DB0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B077AC8C2D774765007B9DB0 /* RootFeature.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B077ABA82D77338D007B9DB0;
-			remoteInfo = RootFeature;
-		};
 		B0E7A0A52D6B3EB700C8F575 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B0E7A08C2D6B3EB600C8F575 /* Project object */;
@@ -37,7 +30,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B077ACC42D77476B007B9DB0 /* RootFeature.framework in Embed Frameworks */,
+				B05E8A972D7C353B0070A54C /* RootFeature.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +38,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B05E8A832D7C34690070A54C /* BaseFeature.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BaseFeature.xcodeproj; path = BaseFeature/BaseFeature.xcodeproj; sourceTree = "<group>"; };
+		B05E8A862D7C346F0070A54C /* SearchFeature.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SearchFeature.xcodeproj; path = SearchFeature/SearchFeature.xcodeproj; sourceTree = SOURCE_ROOT; };
+		B05E8A892D7C34E60070A54C /* MainTabFeature.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MainTabFeature.xcodeproj; path = MainTabFeature/MainTabFeature.xcodeproj; sourceTree = "<group>"; };
+		B05E8A8C2D7C35000070A54C /* SharedModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SharedModule; sourceTree = "<group>"; };
+		B05E8A8D2D7C35040070A54C /* ThirdPartyModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ThirdPartyModule; sourceTree = "<group>"; };
+		B05E8A922D7C350E0070A54C /* DesignSystem.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DesignSystem.xcodeproj; path = DesignSystem/DesignSystem.xcodeproj; sourceTree = "<group>"; };
+		B05E8A952D7C353B0070A54C /* RootFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RootFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06C83662D6C27FA00DCB5A2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		B06C83792D6CA59300DCB5A2 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		B077AC8C2D774765007B9DB0 /* RootFeature.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RootFeature.xcodeproj; path = RootFeature/RootFeature.xcodeproj; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B077ACC32D77476B007B9DB0 /* RootFeature.framework in Frameworks */,
+				B05E8A962D7C353B0070A54C /* RootFeature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,22 +87,21 @@
 		B05EBD632D7081D0005BF177 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B077AC8C2D774765007B9DB0 /* RootFeature.xcodeproj */,
+				B05E8A952D7C353B0070A54C /* RootFeature.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B077AC8D2D774765007B9DB0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B077ACBC2D774765007B9DB0 /* RootFeature.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		B0E7A08B2D6B3EB600C8F575 = {
 			isa = PBXGroup;
 			children = (
+				B05E8A8C2D7C35000070A54C /* SharedModule */,
+				B05E8A8D2D7C35040070A54C /* ThirdPartyModule */,
+				B077AC8C2D774765007B9DB0 /* RootFeature.xcodeproj */,
+				B05E8A892D7C34E60070A54C /* MainTabFeature.xcodeproj */,
+				B05E8A862D7C346F0070A54C /* SearchFeature.xcodeproj */,
+				B05E8A832D7C34690070A54C /* BaseFeature.xcodeproj */,
+				B05E8A922D7C350E0070A54C /* DesignSystem.xcodeproj */,
 				B06C83792D6CA59300DCB5A2 /* .swiftlint.yml */,
 				B06C83662D6C27FA00DCB5A2 /* .gitignore */,
 				B0E7A0962D6B3EB600C8F575 /* RACLab */,
@@ -205,12 +204,6 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B0E7A0952D6B3EB600C8F575 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = B077AC8D2D774765007B9DB0 /* Products */;
-					ProjectRef = B077AC8C2D774765007B9DB0 /* RootFeature.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				B0E7A0932D6B3EB600C8F575 /* RACLab */,
@@ -218,16 +211,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		B077ACBC2D774765007B9DB0 /* RootFeature.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RootFeature.framework;
-			remoteRef = B077ACBB2D774765007B9DB0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B0E7A0922D6B3EB600C8F575 /* Resources */ = {
