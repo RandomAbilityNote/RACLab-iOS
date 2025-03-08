@@ -11,6 +11,7 @@
 		B05E8AA12D7C360E0070A54C /* BaseFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E8AA02D7C360E0070A54C /* BaseFeature.framework */; };
 		B05E8AA22D7C360E0070A54C /* BaseFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B05E8AA02D7C360E0070A54C /* BaseFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B05E8B672D7C38280070A54C /* SearchFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8B652D7C38280070A54C /* SearchFeatureTests.swift */; };
+		B05E8BD42D7C3A490070A54C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8BD32D7C3A490070A54C /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		B05E8A502D7C341B0070A54C /* SearchFeatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchFeatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B05E8AA02D7C360E0070A54C /* BaseFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B05E8B652D7C38280070A54C /* SearchFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFeatureTests.swift; sourceTree = "<group>"; };
+		B05E8BD32D7C3A490070A54C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,8 @@
 		B05E8B642D7C38280070A54C /* SearchFeature */ = {
 			isa = PBXGroup;
 			children = (
+				B05E8BD22D7C3A1F0070A54C /* Implementation */,
+				B05E8BD52D7C3AC60070A54C /* Interface */,
 			);
 			path = SearchFeature;
 			sourceTree = "<group>";
@@ -104,6 +108,21 @@
 				B05E8B652D7C38280070A54C /* SearchFeatureTests.swift */,
 			);
 			path = SearchFeatureTests;
+			sourceTree = "<group>";
+		};
+		B05E8BD22D7C3A1F0070A54C /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				B05E8BD32D7C3A490070A54C /* SearchView.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		B05E8BD52D7C3AC60070A54C /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +191,7 @@
 				TargetAttributes = {
 					B05E8A472D7C341A0070A54C = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 					};
 					B05E8A4F2D7C341B0070A54C = {
 						CreatedOnToolsVersion = 16.2;
@@ -220,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B05E8BD42D7C3A490070A54C /* SearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +267,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -268,10 +290,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yongbeomkwak.SearchFeature;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -279,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -301,10 +329,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yongbeomkwak.SearchFeature;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B05E8A9C2D7C36070070A54C /* SearchFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E8A9B2D7C36070070A54C /* SearchFeature.framework */; };
-		B05E8A9D2D7C36070070A54C /* SearchFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B05E8A9B2D7C36070070A54C /* SearchFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B05E8B982D7C38820070A54C /* MainTabFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8B962D7C38820070A54C /* MainTabFeatureTests.swift */; };
 		B05E8BA32D7C38820070A54C /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8B992D7C38820070A54C /* Tab.swift */; };
 		B05E8BA42D7C38820070A54C /* MainTabBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8B9B2D7C38820070A54C /* MainTabBuilder.swift */; };
 		B05E8BA52D7C38820070A54C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8B9C2D7C38820070A54C /* MainTabView.swift */; };
 		B05E8BA62D7C38820070A54C /* MainTabBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8B9E2D7C38820070A54C /* MainTabBuildable.swift */; };
 		B05E8BA72D7C38820070A54C /* MainTabDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8B9F2D7C38820070A54C /* MainTabDependency.swift */; };
+		B05E8BD72D7C3B140070A54C /* SearchFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E8BD62D7C3B140070A54C /* SearchFeature.framework */; };
+		B05E8BD82D7C3B140070A54C /* SearchFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B05E8BD62D7C3B140070A54C /* SearchFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B077AC022D774058007B9DB0 /* MainTabFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B077ABF92D774057007B9DB0 /* MainTabFeature.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B05E8A9D2D7C36070070A54C /* SearchFeature.framework in Embed Frameworks */,
+				B05E8BD82D7C3B140070A54C /* SearchFeature.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,13 +43,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B05E8A9B2D7C36070070A54C /* SearchFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SearchFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B05E8B962D7C38820070A54C /* MainTabFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabFeatureTests.swift; sourceTree = "<group>"; };
 		B05E8B992D7C38820070A54C /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		B05E8B9B2D7C38820070A54C /* MainTabBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBuilder.swift; sourceTree = "<group>"; };
 		B05E8B9C2D7C38820070A54C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		B05E8B9E2D7C38820070A54C /* MainTabBuildable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBuildable.swift; sourceTree = "<group>"; };
 		B05E8B9F2D7C38820070A54C /* MainTabDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabDependency.swift; sourceTree = "<group>"; };
+		B05E8BD62D7C3B140070A54C /* SearchFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SearchFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B077ABF92D774057007B9DB0 /* MainTabFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MainTabFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B077AC012D774058007B9DB0 /* MainTabFeatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainTabFeatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B05E8A9C2D7C36070070A54C /* SearchFeature.framework in Frameworks */,
+				B05E8BD72D7C3B140070A54C /* SearchFeature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +148,7 @@
 		B077AC122D77406C007B9DB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B05E8A9B2D7C36070070A54C /* SearchFeature.framework */,
+				B05E8BD62D7C3B140070A54C /* SearchFeature.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
