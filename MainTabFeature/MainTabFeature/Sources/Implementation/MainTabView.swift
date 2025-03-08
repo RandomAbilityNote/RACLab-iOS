@@ -1,18 +1,24 @@
 import DesignSystem
 import SwiftUI
+import SearchFeature
 internal import Util
 
 struct MainTabView: View {
   @State private var activatedTab: Tab = .search
   private let tabs: [Tab] = [.search, .category]
 
+  private let searchBuilder: SearchBuildable
+  init(searchBuilder: SearchBuildable) {
+    self.searchBuilder = searchBuilder
+  }
+
   var body: some View {
     VStack(spacing: .zero) {
       TabView {
-        Text("Search")
-          .font(.pretendard(size: 20, weight: .bold))
+        searchBuilder
+          .build()
           .tag(Tab.search)
-          .background(.green)
+
         Text("Category")
           .tag(Tab.category)
       }
@@ -47,12 +53,12 @@ struct MainTabView: View {
 struct TabBarItem: View {
   private let tab: Tab
   @Binding var activatedTab: Tab
-
+  
   init(tab: Tab, activatedTab: Binding<Tab>) {
     self.tab = tab
     self._activatedTab = activatedTab
   }
-
+  
   var body: some View {
     VStack(spacing: 5) {
       Image(uiImage: tab == activatedTab ? tab.activatedImage : tab.deActivatedImage)
@@ -69,10 +75,13 @@ struct TabBarItem: View {
     .onTapGesture {
       activatedTab = tab
     }
-
   }
 }
 
+struct MockSearchDependency: SearchDependency {
+
+}
+
 #Preview {
-  MainTabView()
+  MainTabView(searchBuilder: SearchBuilder(dependency: MockSearchDependency()))
 }
