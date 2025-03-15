@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B05A22EA2D7E93B6005066D8 /* Tribe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05A22E92D7E93B6005066D8 /* Tribe.swift */; };
 		B05E8A512D7C341B0070A54C /* SearchFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E8A482D7C341A0070A54C /* SearchFeature.framework */; };
 		B05E8AA12D7C360E0070A54C /* BaseFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E8AA02D7C360E0070A54C /* BaseFeature.framework */; };
 		B05E8AA22D7C360E0070A54C /* BaseFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B05E8AA02D7C360E0070A54C /* BaseFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -15,6 +16,8 @@
 		B05E8BDA2D7C3E430070A54C /* SearchBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8BD92D7C3E430070A54C /* SearchBuildable.swift */; };
 		B05E8BDC2D7C3EAB0070A54C /* SearchBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8BDB2D7C3EAB0070A54C /* SearchBuilder.swift */; };
 		B05E8BDE2D7C3EC70070A54C /* SearchDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8BDD2D7C3EC70070A54C /* SearchDependency.swift */; };
+		B05E8E092D7C65800070A54C /* SearchBarTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8E082D7C65800070A54C /* SearchBarTextFieldStyle.swift */; };
+		B05E8E0B2D7DC56D0070A54C /* SearchTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8E0A2D7DC56D0070A54C /* SearchTextFieldStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B05A22E92D7E93B6005066D8 /* Tribe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tribe.swift; sourceTree = "<group>"; };
 		B05E8A482D7C341A0070A54C /* SearchFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SearchFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B05E8A502D7C341B0070A54C /* SearchFeatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchFeatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B05E8AA02D7C360E0070A54C /* BaseFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +54,8 @@
 		B05E8BD92D7C3E430070A54C /* SearchBuildable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBuildable.swift; sourceTree = "<group>"; };
 		B05E8BDB2D7C3EAB0070A54C /* SearchBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBuilder.swift; sourceTree = "<group>"; };
 		B05E8BDD2D7C3EC70070A54C /* SearchDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDependency.swift; sourceTree = "<group>"; };
+		B05E8E082D7C65800070A54C /* SearchBarTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarTextFieldStyle.swift; sourceTree = "<group>"; };
+		B05E8E0A2D7DC56D0070A54C /* SearchTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFieldStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,9 @@
 			children = (
 				B05E8BD32D7C3A490070A54C /* SearchView.swift */,
 				B05E8BDB2D7C3EAB0070A54C /* SearchBuilder.swift */,
+				B05E8E082D7C65800070A54C /* SearchBarTextFieldStyle.swift */,
+				B05E8E0A2D7DC56D0070A54C /* SearchTextFieldStyle.swift */,
+				B05A22E92D7E93B6005066D8 /* Tribe.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -250,8 +259,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B05E8BDA2D7C3E430070A54C /* SearchBuildable.swift in Sources */,
+				B05E8E0B2D7DC56D0070A54C /* SearchTextFieldStyle.swift in Sources */,
+				B05E8E092D7C65800070A54C /* SearchBarTextFieldStyle.swift in Sources */,
 				B05E8BD42D7C3A490070A54C /* SearchView.swift in Sources */,
 				B05E8BDE2D7C3EC70070A54C /* SearchDependency.swift in Sources */,
+				B05A22EA2D7E93B6005066D8 /* Tribe.swift in Sources */,
 				B05E8BDC2D7C3EAB0070A54C /* SearchBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +294,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 28NL63HBTJ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -321,7 +333,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 28NL63HBTJ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

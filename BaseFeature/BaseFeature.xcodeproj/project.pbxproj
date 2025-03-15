@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B03FC7FC2D71655E00F006ED /* BaseFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A88FA62D71537800F3BCA1 /* BaseFeature.framework */; };
 		B03FC7FD2D71655E00F006ED /* BaseFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0A88FA62D71537800F3BCA1 /* BaseFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B05A22F12D852721005066D8 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05A22F02D852721005066D8 /* DesignSystem.framework */; };
+		B05A22F22D852721005066D8 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B05A22F02D852721005066D8 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B05E8B6E2D7C382C0070A54C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B05E8B682D7C382C0070A54C /* Preview Assets.xcassets */; };
 		B05E8B6F2D7C382C0070A54C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B05E8B6A2D7C382C0070A54C /* Assets.xcassets */; };
 		B05E8B702D7C382C0070A54C /* BaseFeatureDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E8B6B2D7C382C0070A54C /* BaseFeatureDemoApp.swift */; };
@@ -73,6 +75,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B05A22F22D852721005066D8 /* DesignSystem.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +86,7 @@
 		B03FC7D22D7164D600F006ED /* BaseFeatureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseFeatureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B03FC7E12D7164D700F006ED /* BaseFeatureDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseFeatureDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B03FC7EB2D7164D700F006ED /* BaseFeatureDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseFeatureDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B05A22F02D852721005066D8 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B05E8B682D7C382C0070A54C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B05E8B6A2D7C382C0070A54C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B05E8B6B2D7C382C0070A54C /* BaseFeatureDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFeatureDemoApp.swift; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B05A22F12D852721005066D8 /* DesignSystem.framework in Frameworks */,
 				B098F6632D7B168900D490D3 /* ThirdPartyModule in Frameworks */,
 				B098F6662D7B180500D490D3 /* SharedModule in Frameworks */,
 			);
@@ -143,6 +148,7 @@
 		B04389912D7155E6002489CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B05A22F02D852721005066D8 /* DesignSystem.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
