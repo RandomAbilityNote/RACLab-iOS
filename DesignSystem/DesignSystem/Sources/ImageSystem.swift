@@ -18,5 +18,11 @@ public extension UIImage {
       public static let terran = UIImage("Terran") ?? UIImage()
       public static let protoss = UIImage("Protoss") ?? UIImage()
     }
+
+    public enum TribeSymbol {
+      public static let zerg = UIImage("ZergSymbol") ?? UIImage()
+      public static let terran = UIImage("TerranSymbol") ?? UIImage()
+      public static let protoss = UIImage("ProtossSymbol") ?? UIImage()
+    }
   }
 }
