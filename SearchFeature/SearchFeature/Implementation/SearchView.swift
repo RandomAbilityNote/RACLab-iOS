@@ -18,29 +18,40 @@ struct SearchView: View {
   func TribeCard(tribe: Tribe) -> some View {
     GeometryReader { geometry in
       let size = geometry.size
-      VStack {
-        Image(uiImage: tribe.cardImage)
-          .resizable()
-          .scaledToFit()
-          .frame(width: 150, height: 180)
-        HStack {
-          VStack {
-            Text(tribe.rawValue)
-              .font(.pretendard(size: 22, weight: .medium))
-              .foregroundStyle(.white)
-            Text(tribe.engName)
-              .font(.pretendard(size: 14, weight: .regular))
-              .foregroundStyle(Color.ColorSystem.beige)
-          }
-          Image(uiImage: .ImageSystem.TabBar.activatedCategory)
+      HStack {
+        Spacer()
+        VStack(spacing: 15) {
+          Image(uiImage: tribe.cardImage)
             .resizable()
-            .scaledToFit()
-            .frame(width: 40, height: 40)
+            .padding(.top, 25)
+          HStack {
+            VStack(spacing: -4) {
+              Text(tribe.rawValue)
+                .font(.pretendard(size: 22, weight: .medium))
+                .foregroundStyle(.white)
+              Text(tribe.engName)
+                .font(.pretendard(size: 14, weight: .regular))
+                .foregroundStyle(Color.ColorSystem.beige)
+            }
+            .frame(maxWidth: .infinity) // 텍스트를 중앙 정렬
+          }
+          .overlay(content: {
+            HStack {
+              Spacer()
+              Image(uiImage: tribe.symbol)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 44, height: 44) // 적절한 크기 설정
+            }
+          })
+          .padding(.bottom, 10)
         }
+        Spacer()
       }
-
+      .padding(.horizontal, 25)
     }
     .frame(width: 230, height: 280)
+    .background(.blue)
   }
 
   @ViewBuilder
@@ -59,5 +70,5 @@ struct SearchView: View {
 }
 
 #Preview {
-    SearchView()
+  SearchView()
 }

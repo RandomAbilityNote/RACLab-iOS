@@ -31,4 +31,15 @@ enum Tribe: String, Identifiable, CaseIterable {
       return .ImageSystem.TribeCard.protoss
     }
   }
+
+  var symbol: UIImage {
+    switch self {
+    case .zerg:
+      return .ImageSystem.TribeSymbol.zerg
+    case .terran:
+      return .ImageSystem.TribeSymbol.terran
+    case .protoss:
+      return .ImageSystem.TribeSymbol.protoss
+    }
+  }
 }
